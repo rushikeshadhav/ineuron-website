@@ -97,7 +97,7 @@ canvas {
 #value-10000::after {
     content: "+"
 }
-#value-20000::after {
+#value-200::after {
     content: "+"
 }
 
