@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+canvas {
+    height: 100vh;
+    /* transform: skewY(-12deg); */
+    position: relative;
+    top: -1px;
+}
+
+#gradient-canvas {
+    --gradient-color-1: #ef008f;
+    --gradient-color-2: #6ec3f4;
+    --gradient-color-3: #7038ff;
+    --gradient-color-4: #e2e2e2;
+}
+
+/* canvas  */
+
+.nav-input {
+    border: 2px solid #0a2540;
+    width: 900px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.link-underline {
+    border-bottom-width: 0;
+    padding-bottom: 5px;
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+    background-size: 0 3px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size .5s ease-in-out;
+}
+
+.link-underline-black {
+    background-image: linear-gradient(transparent, transparent), linear-gradient(#F2C, #F2C)
+}
+
+.link-underline:hover {
+    background-size: 100% 3px;
+    background-position: 0 100%
+}
+
+.btn {
+    /* width: 100px; */
+    /* background: blue; */
+    border-radius: 8px;
+    padding: 8px 30px;
+    border: none;
+}
+
+.btn-primary {
+    border: none;
+    background: #0a2540;
+}
+
+.btn-secondary {
+    padding: 7px 25px;
+    border: none;
+    background: #0a2540;
+}
+
+.btn-primary:hover {
+    background: rgb(79, 78, 78);
+}
+
+.horizontal-line {
+    height: 4px;
+    width: 200px;
+    background: #fff;
+}
+
+
+.big-heading {
+    /* color: linear-gradient(#00BC40, #4C3AE3); */
+    /* background: -webkit-linear-gradient(#DB0B5F, #6F00ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: #3a3a3a;
+    mix-blend-mode: color-burn;
+}
+
+#value-400::after {
+    content: "+"
+}
+#value-400000::after {
+    content: "+"
+}
+#value-10000::after {
+    content: "+"
+}
+#value-20000::after {
+    content: "+"
+}
+
+
+footer {
+    position: relative;
+    background: #181c2e;
+    color: #fff;
+}
+
+.footer-container {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container h2 {
+    font-weight: 500;
+    border: 3px solid #5c5c5c;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 10px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin: 15px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.address {
+    width: 300px;
+    margin-left: 30px;
+}
+
+.email {
+    margin-left: 30px;
+}
+
+.first img {
+    height: 40px;
+    margin-right: 20px;
+}
+
+.first i {
+    margin-right: 10px;
+}
+
+.iso-img {
+    position: absolute;
+    bottom: 200px;
+    right: 50px;
+}
+
