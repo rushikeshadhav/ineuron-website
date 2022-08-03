@@ -19,14 +19,15 @@
 
 <body>
 
-    <canvas class="absolute -z-10" id="gradient-canvas" style="width:100vw"></canvas>
+    <canvas class="absolute -top-1 -z-10 h-[1000px] lg:h-full" id="gradient-canvas" style="width:100vw;"></canvas>
 
 
-    <nav class="mx-20 h-24 mt-5">
+    <nav class="mx-20 h-24 mt-5 hidden lg:block">
         <div class="flex items-center">
             <img class="w-40" src="./assets/logo.png" alt="">
-            <input class="nav-input bg-transparent placeholder-white w-1/2 ml-10" type="text" name="" id="" placeholder="What do you want to learn?">
-            <button class="btn text-black underline underline-offset-4 ml-auto">Sign Up</button>
+            <input class="nav-input bg-transparent placeholder-white w-1/2 ml-10" type="text" name="" id=""
+                placeholder="What do you want to learn?">
+            <button class="btn text-black font-semibold ml-auto">Sign Up</button>
             <button class="btn text-white bg-[#0a2540]">Sign In</button>
         </div>
         <div>
@@ -43,52 +44,62 @@
             </ul>
         </div>
     </nav>
-    <div class="hero-container min-h-[550px] pl-20 mb-20 flex justify-around items-center">
+    <div class="lg:hidden block mx-4 mt-1 md:mx-10 md:mt-5">
+        <div class="flex justify-between items-center">
+            <div><img class="h-6 md:h-10" src="./assets/hamburger.svg" alt="hamburger"></div>
+            <div><a href="https://ineuron.ai/"><img class="w-28 md:w-40" src="./assets/logo.png" alt="ineuron"></a></div>
+            <div><img class="h-4 md:h-7" src="./assets/search-icon.svg"
+                    alt="search-icon"></div>
+        </div>
+    </div>
+    <div class="hero-container md:pl-0 lg:pl-20 mb-20 flex-col-reverse lg:flex-row flex justify-around items-center ">
         <div class="left-content">
-            <h2 class="text-3xl font-semibold pb-2 mt-10 text-white">Learn from the best of industry</h2>
-            <div class="horizontal-line"></div>
-            <h1 class="text-7xl font-bold mt-5 mb-2 leading-none big-heading">Highest in quality, affordable in price
+            <h2 class="text-xl md:text-3xl font-semibold pb-2 md:mt-0 text-center lg:text-start lg:mt-10 text-white">Learn from the best of industry</h2>
+            <div class="horizontal-line mx-auto lg:mx-0"></div>
+            <h1 class="text-4xl md:text-7xl font-bold mt-5 mb-2 leading-none big-heading text-center lg:text-start">Highest in quality, affordable in price
             </h1>
-            <p class="text-xl font-medium mt-5">Digital entrepreneurs, Youtubers and content creators provide affordable
+            <p class="text-sm md:text-xl font-medium mt-5 text-center lg:text-start">Digital entrepreneurs, Youtubers and content creators provide affordable
                 courses
                 across technologies.</p>
-            <div class="flex relative mt-5 mb-5">
-                <div class="w-[70px] h-[70px] rounded-full">
-                    <img class="w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block" src="./assets/hitesh-square.png"
-                        alt="">
+            <div class="mx-10 md:text-center lg:text-start lg:mx-0">
+                <div class="flex relative mt-5 mb-5">
+                    <div class="w-11 md:w-[70px] h-11 md:h-[70px] rounded-full">
+                        <img class="w-11 md:w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block" src="./assets/hitesh-square.png"
+                            alt="">
+                    </div>
+                    <div class="w-12 md:w-[70px] h-12 md:h-[70px] bg-white rounded-full absolute left-[35px] md:left-[50px]">
+                        <img class="w-11 md:w-16 bg-blue-600 rounded-full mx-auto mt-[2px] md:mt-[3px] block"
+                            src="./assets/Kiran-Sahu-square.png" alt="">
+                    </div>
+                    <div class="w-12 md:w-[70px] h-12 md:h-[70px] bg-white rounded-full absolute left-[70px] md:left-[100px]">
+                        <img class="w-11 md:w-16 bg-blue-600 rounded-full mx-auto mt-[2px] md:mt-[3px] block"
+                            src="./assets/sudhanshu-square.png" alt="">
+                    </div>
+                    <div class="w-12 md:w-[70px] h-12 md:h-[70px] bg-white rounded-full absolute left-[105px] md:left-[150px]">
+                        <img class="w-11 md:w-16 bg-blue-600 rounded-full mx-auto mt-[2px] md:mt-[3px] block" src="./assets/krish-square.png"
+                            alt="">
+                    </div>
+                    <div class="w-12 md:w-[70px] h-12 md:h-[70px] bg-white rounded-full absolute left-[140px] md:left-[200px]">
+                        <img class="w-11 md:w-16 bg-blue-600 rounded-full mx-auto mt-[2px] md:mt-[3px] block" src="./assets/telusko-square.png"
+                            alt="">
+                    </div>
+                    <div class="w-12 md:w-[70px] h-12 md:h-[70px] bg-white rounded-full absolute left-[175px] md:left-[250px]">
+                        <img class="w-11 md:w-16 bg-blue-600 rounded-full mx-auto mt-[2px] md:mt-[3px] block" src="./assets/amresh-square.png"
+                            alt="">
+                    </div>
+                    <div class="w-12 md:w-[70px] h-12 md:h-[70px] bg-white rounded-full absolute left-[210px] md:left-[300px]">
+                        <img class="w-11 md:w-16 bg-blue-600 rounded-full mx-auto mt-[2px] md:mt-[3px] block" src="./assets/mysirg-square.png"
+                            alt="">
+                    </div>
+                    <div class="w-12 md:w-[70px] h-12 md:h-[70px] bg-white rounded-full absolute left-[245px]  md:left-[350px]">
+                        <img class="w-11 md:w-16 bg-blue-600 rounded-full mx-auto mt-[2px] md:mt-[3px] block" src="./assets/saksham-square.png"
+                            alt="">
+                    </div>
                 </div>
-                <div class="w-[70px] h-[70px] bg-white rounded-full absolute left-[55px]">
-                    <img class="w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block"
-                        src="./assets/Kiran-Sahu-square.png" alt="">
-                </div>
-                <div class="w-[70px] h-[70px] bg-white rounded-full absolute left-[110px]">
-                    <img class="w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block"
-                        src="./assets/sudhanshu-square.png" alt="">
-                </div>
-                <div class="w-[70px] h-[70px] bg-white rounded-full absolute left-[165px]">
-                    <img class="w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block" src="./assets/krish-square.png"
-                        alt="">
-                </div>
-                <div class="w-[70px] h-[70px] bg-white rounded-full absolute left-[220px]">
-                    <img class="w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block" src="./assets/telusko-square.png"
-                        alt="">
-                </div>
-                <div class="w-[70px] h-[70px] bg-white rounded-full absolute left-[275px]">
-                    <img class="w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block" src="./assets/amresh-square.png"
-                        alt="">
-                </div>
-                <div class="w-[70px] h-[70px] bg-white rounded-full absolute left-[330px]">
-                    <img class="w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block" src="./assets/mysirg-square.png"
-                        alt="">
-                </div>
-                <div class="w-[70px] h-[70px] bg-white rounded-full absolute left-[385px]">
-                    <img class="w-16 bg-blue-600 rounded-full mx-auto mt-[3px] block" src="./assets/saksham-square.png"
-                        alt="">
-                </div>
+    
+                <button class="bg-[#0a2540] px-3 py-1 text-sm md:text-lg border-none rounded-sm md:py-2 md:px-5 md:btn md:rounded-lg text-white md:btn-secondary mr-5 hover:opacity-75">Explore <i
+                        class="fa-solid fa-greater-than ml-1"></i></button>
             </div>
-
-            <button class="btn text-white btn-secondary mr-5 hover:opacity-75">Explore <i
-                    class="fa-solid fa-greater-than ml-1"></i></button>
             <!-- <button class="btn-secondary text-white opacity-50">Contact</button> -->
         </div>
         <div class="right-content max-w-3xl">
@@ -97,49 +108,70 @@
     </div>
 
     <section>
-        <div class="grid grid-cols-4 grid-rows-1 mb-20">
-            <div class="bg-[#c53c02] min-h-[250px] flex flex-col justify-around py-5">
-                <img class="block mx-auto" src="./assets/books-icon.svg" alt="">
-                <h2 class="text-5xl font-bold text-white text-center" id="value-400">400</h2>
-                <h2 class="text-3xl font-light text-white text-center">Different Courses</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 mb-20">
+            <div class="bg-[#c53c02] h-56 flex flex-col justify-around py-5">
+                <img class="block mx-auto h-16" src="./assets/books-icon.svg" alt="">
+                <h2 class="text-3xl font-bold text-white text-center md:text-4xl" id="value-400">400</h2>
+                <h2 class="text-2xl font-light text-white text-center md:text-2xl">Different Courses</h2>
             </div>
-            <div class="bg-[#265a8f] min-h-[250px] flex flex-col justify-around py-5">
-                <img class="block mx-auto" src="./assets/student-iocn.svg" alt="">
-                <h2 class="text-5xl font-bold text-white text-center" id="value-400000">40000</h2>
-                <h2 class="text-3xl font-light text-white text-center">Students Enrolled</h2>
+            <div class="bg-[#265a8f] h-56 flex flex-col justify-around py-5">
+                <img class="block mx-auto h-16" src="./assets/student-iocn.svg" alt="">
+                <h2 class="text-3xl font-bold text-white text-center" id="value-400000">40000</h2>
+                <h2 class="text-2xl font-light text-white text-center">Students Enrolled</h2>
             </div>
-            <div class="bg-[#fdee00] min-h-[250px] flex flex-col justify-around py-5">
-                <img class="block mx-auto" src="./assets/credit-card-icon.svg" alt="">
-                <h2 class="text-5xl font-bold text-black text-center" id="value-10000">10000</h2>
-                <h2 class="text-3xl font-light text-black text-center">Successful Transaction</h2>
+            <div class="bg-[#fdee00] h-56 flex flex-col justify-around py-5">
+                <img class="block mx-auto h-16" src="./assets/credit-card-icon.svg" alt="">
+                <h2 class="text-3xl font-bold text-black text-center" id="value-10000">10000</h2>
+                <h2 class="text-2xl font-light text-black text-center">Successful Transaction</h2>
             </div>
-            <div class="bg-[#353535] min-h-[250px] flex flex-col justify-around py-5">
-                <img class="block mx-auto" src="./assets/credit-card-icon.svg" id="value-400" alt="">
-                <h2 class="text-5xl font-bold text-white text-center" id="value-200">200</h2>
-                <h2 class="text-3xl font-light text-white text-center">Different Courses</h2>
-            </div>
-        </div>
-    </section>
-
-    <section class="pt-10 bg-[#eef0f5]">
-        <div class="achiever-container px-20">
-            <h1
-                class="md:text-5xl text-4xl font-extrabold tracking-normal leading-tight font-manrope undefined text-center">
-                Our Achiever work With</h1>
-            <div class="flex justify-around py-16">
-                <img class="max-w-[200px]" src="./assets/affine.png" alt="">
-                <img class="max-w-[200px]" src="./assets/cohesity.png" alt="">
-                <img class="max-w-[200px]" src="./assets/geekyants.png" alt="">
-                <img class="max-w-[200px]" src="./assets/learnyst.png" alt="">
-                <img class="max-w-[200px]" src="./assets/mindtree.png" alt="">
+            <div class="bg-[#353535] h-56 flex flex-col justify-around py-5">
+                <img class="block mx-auto h-16" src="./assets/credit-card-icon.svg" id="value-400" alt="">
+                <h2 class="text-3xl font-bold text-white text-center" id="value-200">200</h2>
+                <h2 class="text-2xl font-light text-white text-center">Different Courses</h2>
             </div>
         </div>
     </section>
 
-    <section class="w-full flex justify-center relative py-10 mt-16">
+
+    <section class="w-full flex justify-center relative md:py-10">
+        <div class="w-full md:max-w-7xl px-8 py-10 flex flex-col items-center relative">
+            <h1 class="md:text-5xl text-center text-4xl font-semibold tracking-normal leading-tight">Our Achiever's work With</h1>
+            <p class="block text-lg text-gray-600 font-light mt-4">Our students are working in these amazing
+                organisations</p>
+            <div class="grid md:grid-cols-5 grid-cols-2 my-5 mb-10">
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/affine.png" alt="0"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/cohesity.png" alt="1">
+                </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/geekyants.png" alt="2">
+                </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/wipro.png" alt="3"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/mindtree.png" alt="4">
+                </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/odessa.png" alt="5"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/robosoft.png" alt="6">
+                </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/wellnesys.png" alt="7">
+                </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/redbus.png" alt="8"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/kpmg.png" alt="9"> </div>
+            </div>
+            <p class="block text-lg text-gray-600 font-light mt-4 undefined">and 10+ Hackathon companies</p>
+            <div class="grid md:grid-cols-5 grid-cols-2 my-5 mb-0">
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/nvidia.png" alt="1"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/jet-brains.png" alt="0">
+                </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/github.png" alt="3"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/redis.png" alt="2"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img src="./assets/learnyst.png" alt="4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full flex justify-center relative md:py-10">
         <div class="w-full md:max-w-7xl px-8 py-10 flex flex-col items-center relative">
             <div class="w-full flex items-center flex-col text-center">
-                <h1 class="md:text-5xl text-4xl font-extrabold tracking-normal leading-tight font-manrope undefined">
+                <h1 class="md:text-5xl text-4xl font-semibold tracking-normal leading-tight mb-5">
                     Hall of Fame</h1>
                 <p class="block text-lg text-gray-600 font-light mt-4 undefined">We are proud of our achievers to have
                     proved their success through hard-work and dedication which has enabled them to make their dreams
@@ -169,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col p-10 rounded-2xl shadow-pesto justify-start">
+                <div class="flex flex-col p-10 rounded-2xl justify-start">
                     <div class="text-[#06b6d4]"><svg width="60" height="50" viewBox="0 0 60 50" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -188,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col p-10 rounded-2xl shadow-pesto justify-start">
+                <div class="flex flex-col p-10 rounded-2xl justify-start">
                     <div class="text-[#06b6d4]"><svg width="60" height="50" viewBox="0 0 60 50" fill="currentColor"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -213,18 +245,23 @@
         </div>
     </section>
 
-    <section class="w-full flex justify-center relative py-10">
+    <section class="w-full flex justify-center relative md:py-10">
         <div class="w-full md:max-w-7xl px-8 py-10 flex flex-col items-center relative">
             <div class="w-full flex items-center flex-col text-center">
-                <h1 class="md:text-5xl text-4xl font-extrabold tracking-normal leading-tight font-manrope undefined">
+                <h1 class="md:text-5xl text-3xl font-semibold tracking-normal leading-tight">
                     What you will learn</h1>
 
-                <div class="flex gap-5 mt-12">
+                <div class="lg:hidden mt-12">
+                    <button class="md:text-5xl text-xl font-normal md:font-medium py-2 px-4 md:py-3 md:px-10 rounded-lg border-2">
+                        Live Programs<i class="ml-5 fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-5 lg:mt-12">
                     <button class="bg-[#22d3ee] hover:bg-[#06b6d4] text-white font-medium py-3 px-10 rounded-lg">
                         Live Programs
                     </button>
                     <button
-                        class=" hover:bg-[#22d3ee] hover:text-white text-black font-medium py-3 px-5 rounded-lg border-2">
+                        class=" hover:bg-[#22d3ee] hover:text-white text-black font-medium py-3 px-10 rounded-lg border-2">
                         Affordable programs
                     </button>
                     <button
@@ -243,9 +280,9 @@
             </div>
             <div class="w-full md:max-w-7xl px-8 pt-10 flex flex-col items-center relative">
                 <div class="w-full flex items-center flex-col text-center">
-                    <h1 class="md:text-3xl text-4xl font-semibold tracking-normal leading-tight font-manrope undefined">
+                    <h1 class="md:text-3xl text-2xl font-semibold tracking-normal leading-tight">
                         Live Programs</h1>
-                    <p class="block text-lg text-gray-600 font-light mt-2 undefined">Get your program with live
+                    <p class="block text-sm md:text-lg text-gray-600 font-light mt-2">Get your program with live
                         "instructor led" learning.</p>
                 </div>
             </div>
@@ -262,7 +299,7 @@
                     <h2 class="font-semibold text-slate-600 mt-2">Anurag Tiwari</h2>
                     <div class="flex flex-col">
                         <h2 class="font-semibold text-xl mt-5 mb-5">₹ 17700</h2>
-                        <a href="https://ineuron.ai/course/DSA-for-FAANG-preparation-with-Python-and-JavaScript" class=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500  text-white rounded-lg w-full font-semibold text-xl
+                        <a href="https://ineuron.ai/course/DSA-for-FAANG-preparation-with-Python-and-JavaScript" class="bg-[#22d3ee] hover:bg-[#06b6d4] text-white rounded-lg w-full font-semibold text-xl
                         py-2 border-2 mt-2 text-center border-none">
                             Explore
                         </a>
@@ -273,11 +310,12 @@
                     class="flex flex-col p-3 rounded-lg justify-start drop-shadow-[0px_8px_24px_rgba(149,157,165,0.2)] bg-white">
                     <div class="text-[#06b6d4]">
                         <img src="./assets/course-img2.jpg" alt=""></div>
-                    <a href="https://ineuron.ai/course/YouTube-Mastery-Batch-2-in-Hindi" class="font-semibold text-lg mt-3 text-[#155e75]">YouTube Mastery Batch 2 in Hindi</a>
+                    <a href="https://ineuron.ai/course/YouTube-Mastery-Batch-2-in-Hindi"
+                        class="font-semibold text-lg mt-3 text-[#155e75]">YouTube Mastery Batch 2 in Hindi</a>
                     <h2 class="font-semibold text-slate-600 mt-8">Amresh Bharti</h2>
                     <div class="flex flex-col">
                         <h2 class="font-semibold text-xl mt-5 mb-5">₹ 7000</h2>
-                        <a href="https://ineuron.ai/course/YouTube-Mastery-Batch-2-in-Hindi" class=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500  text-white rounded-lg w-full font-semibold text-xl
+                        <a href="https://ineuron.ai/course/YouTube-Mastery-Batch-2-in-Hindi" class="bg-[#22d3ee] hover:bg-[#06b6d4]  text-white rounded-lg w-full font-semibold text-xl
                         py-2 border-2 mt-2 text-center border-none">
                             Explore
                         </a>
@@ -293,7 +331,7 @@
                     <h2 class="font-semibold text-slate-600 mt-2">Anurag Tiwari</h2>
                     <div class="flex flex-col">
                         <h2 class="font-semibold text-xl mt-5 mb-5">₹ 4000</h2>
-                        <a href="https://ineuron.ai/course/Full-Stack-Web-Development-using-Python-in-Hindi" class=" bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500  text-white rounded-lg w-full font-semibold text-xl
+                        <a href="https://ineuron.ai/course/Full-Stack-Web-Development-using-Python-in-Hindi" class="bg-[#22d3ee] hover:bg-[#06b6d4]  text-white rounded-lg w-full font-semibold text-xl
                         py-2 border-2 mt-2 text-center border-none">
                             Explore
                         </a>
@@ -303,86 +341,81 @@
         </div>
     </section>
 
-    <section class="bg-[#eef0f5] pt-16">
-        <div class="achiever-container px-20">
-            <h1
-                class="md:text-5xl text-4xl font-extrabold tracking-normal leading-tight font-manrope undefined text-center">
-                Our Achiever work With</h1>
-            <div class="flex justify-around py-16">
-                <img class="max-w-[200px]" src="./assets/github.png" alt="">
-                <img class="max-w-[200px]" src="./assets/learnyst.png" alt="">
-                <img class="max-w-[200px]" src="./assets/jet-brains.png" alt="">
-                <img class="max-w-[200px]" src="./assets/nvidia.png" alt="">
-                <img class="max-w-[200px]" src="./assets/redis" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="mt-14">
+    <!-- <section class="mt-14">
         <div class="flex-col justify-around px-20 items-center relative">
             <div>
-                <h1 class="md:text-6xl text-3xl font-extrabold tracking-normal leading-tight text-center big-heading">
+                <h1 class="md:text-5xl text-4xl font-semibold tracking-normal leading-tight mb-5 text-center">
                     Our Products</h1>
             </div>
-            <div class="flex-col my-14 mx-20">
+            <div class="flex-col flex-wrap my-14 mx-20">
                 <div class="flex gap-5">
-                    <div class="shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] w-3/5 p-6  rounded-2xl">
+                    <a href="https://jobs.ineuron.ai/"
+                        class="shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] w-3/5 p-6  rounded-2xl">
                         <img class="max-w-[180px] mx-auto" src="./assets/jobPortal-icon.svg" alt="">
                         <h2 class="text-xl font-semibold mt-5 mb-2 text-center">Job Portal</h2>
                         <p class="block text-base font-normal mt-2 text-center">
                             Use exceptional templates for a stand-out resume minus the sign up process.
                         </p>
-                    </div>
-                    <div class="hover:shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] w-3/5 p-6 h-1/4 rounded-2xl">
+                    </a>
+                    <a href="https://internship.ineuron.ai/"
+                        class="hover:shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] w-3/5 p-6 h-1/4 rounded-2xl">
                         <img class="max-w-[180px] mx-auto" src="./assets/Internship-icon.svg" alt="">
                         <h2 class="text-xl font-semibold mt-5 mb-2 text-center">Internship Portal</h2>
                         <p class="block text-base font-normal mt-2  text-center">
                             iNeuron's self-paced internship portal prioritises hands-on training with 570+ internship
                             projects.
                         </p>
-                    </div>
-                    <div class="hover:shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] p-6 h-1/4 rounded-2xl">
+                    </a>
+                    <a href="https://affiliate.ineuron.ai/"
+                        class="hover:shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] p-6 h-1/4 rounded-2xl">
                         <img class="max-w-[180px] mx-auto" src="./assets/affilitatePortal-icon.svg" alt="">
                         <h2 class="text-xl font-semibold mt-5 mb-2 text-center">Become an affiliate</h2>
                         <p class="block text-base font-normal mt-2 text-center">
                             Explore affiliate marketing opportunities with iNeuron and attain financial freedom.
                         </p>
-                    </div>
                 </div>
-                <div class="flex justify-center gap-5 mt-10">
+            </div>
+            <div class="flex justify-center gap-5 mt-10">
 
-                    <div class="hover:shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] p-6 w-1/3 rounded-2xl">
-                        <img class="max-w-[100px] mx-auto" src="./assets/halloffame-icon.svg" alt="">
-                        <h2 class="text-xl font-semibold mt-5 mb-2 text-center">Hall of fame</h2>
-                        <p class="block text-base font-normal mt-2 text-center">
-                            Our student placements and 10+ career transitions speak volumes about our courses.
-                        </p>
-                    </div>
-                    <div class="hover:shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] p-6 w-1/3 rounded-2xl">
-                        <img class="max-w-[180px] mx-auto" src="./assets/jobPortal-icon.svg" alt="">
-                        <h2 class="text-xl  font-semibold mt-5 mb-2 text-center">InBlog</h2>
-                        <p class="block text-base font-normal mt-2  text-center">
-                            Explore all you want about your favourite courses.
-                        </p>
-                    </div>
+                <div class="hover:shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] p-6 w-1/3 rounded-2xl">
+                    <img class="max-w-[100px] mx-auto" src="./assets/halloffame-icon.svg" alt="">
+                    <h2 class="text-xl font-semibold mt-5 mb-2 text-center">Hall of fame</h2>
+                    <p class="block text-base font-normal mt-2 text-center">
+                        Our student placements and 10+ career transitions speak volumes about our courses.
+                    </p>
+                </div>
+                <div class="hover:shadow-[0px_7px_29px_0px_rgba(100,100,111,0.2)] p-6 w-1/3 rounded-2xl">
+                    <img class="max-w-[180px] mx-auto" src="./assets/jobPortal-icon.svg" alt="">
+                    <h2 class="text-xl  font-semibold mt-5 mb-2 text-center">InBlog</h2>
+                    <p class="block text-base font-normal mt-2  text-center">
+                        Explore all you want about your favourite courses.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
-
-
-    <section class="bg-[#eef0f5] mt-16">
-        <div class="flex items-center achiever-container py-20 mx-10">
-            <h1 class="md:text-5xl text-4xl font-extrabold tracking-tight text-center w-2/5">
-                Our Partnered Institutions</h1>
-            <div class="flex gap-5">
-                <img class="w-40" src="./assets/taxila.svg" alt="">
-                <img class="w-40" src="./assets/vit.svg" alt="">
-                <img class="w-40" src="./assets/keit.svg" alt="">
-                <img class="w-40" src="./assets/gim.svg" alt="">
-                <img class="w-40" src="./assets/malnad-college.svg" alt="">
-            </div>
         </div>
+    </section> -->
+
+
+    <section class="w-full flex justify-center relative md:pb-10">
+        <div class="w-full md:max-w-7xl px-8 py-10 flex flex-col items-center relative">
+            <h1 class="md:text-5xl text-3xl text-center font-semibold tracking-normal leading-tight mb-5">Our Partnered Institutions
+            </h1>
+            <div class="grid md:grid-cols-5 grid-cols-2 my-5">
+                <div class="flex justify-center w-5/6 h-24 items-center"><img class="h-40" src="./assets/taxila.svg"
+                        alt="0"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img class="h-40" src="./assets/keit.svg"
+                        alt="1">
+                </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img class="h-40" src="./assets/vit.svg"
+                        alt="2">
+                </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img class="h-40" src="./assets/gim.svg"
+                        alt="3"> </div>
+                <div class="flex justify-center w-5/6 h-24 items-center"><img class="h-40"
+                        src="./assets/malnad-college.svg" alt="4">
+                </div>
+            </div>
     </section>
 
 
@@ -400,52 +433,52 @@
 
 
 
-    <footer>
-        <div class="footer-container">
+    <footer class="bg-[#181c2e] text-white p-7 md:p-16">
+        <div class="grid grid-cols-1 lg:grid-cols-4 ">
             <div class="first">
-                <div class="flex mb-10 items-center">
-                    <img src="./assets/ineuron-logo-white.png" alt="">
+                <div class="flex gap-2 mb-10 items-center">
+                    <img class="mr-3" src="./assets/ineuron-logo-white.png" alt="">
 
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-square-facebook"></i>
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-youtube"></i></div>
-                <div class="flex">
-                    <i class="fa-solid fa-location-dot"></i>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-location-dot mr-5"></i>
                     <p class="address">17th Floor Tower A, Brigade Signature Towers, Sannatammanahalli, Bengaluru,
                         Karnataka 562129.</p>
                 </div>
-                <div class="flex mt-5">
-                    <i class="fa-solid fa-envelope"></i>
+                <div class="flex mt-5 items-center">
+                    <i class="fa-solid fa-envelope mr-5"></i>
                     <p class="email">Email us: contact@ineuron.ai</p>
                 </div>
             </div>
-            <img class="iso-img" src="https://ineuron.ai/images/iso-9001-2015.svg" alt="">
-            <div class="second">
-                <h2>Company</h2>
-                <ul>
-                    <li>About us</li>
-                    <li>Hack-A-Thon</li>
-                    <li>Privacy Policy</li>
+            <!-- <img class="iso-img" src="https://ineuron.ai/images/iso-9001-2015.svg" alt=""> -->
+            <div class="mt-10 lg:w-2/3">
+                <h2 class="text-2xl font-normal">Company</h2>
+                <ul class="mt-3">
+                    <li class="mt-2 text-md font-normal text-gray-400">About us</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Hack-A-Thon</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Privacy Policy</li>
                 </ul>
             </div>
-            <div class="third">
-                <h2>Contact Us</h2>
+            <div class="mt-10 lg:w-2/3"">
+                <h2 class="text-2xl font-normal">Contact Us</h2>
                 <ul>
-                    <li>Contact us</li>
-                    <li>FAQs</li>
-                    <li>Job Assistance</li>
-                    <li>Terms and conditions</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Contact us</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">FAQs</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Job Assistance</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Terms and conditions</li>
                 </ul>
             </div>
-            <div class="fourth">
-                <h2>Products</h2>
+            <div class="mt-10 lg:w-2/3"">
+                <h2 class="text-2xl font-normal">Products</h2>
                 <ul>
-                    <li>Job Portal</li>
-                    <li>Internship</li>
-                    <li>Become an affiliate</li>
-                    <li>Hall of Fame</li>
-                    <li>InBlog</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Job Portal</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Internship</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Become an affiliate</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">Hall of Fame</li>
+                    <li class="mt-2 text-md font-normal text-gray-400">InBlog</li>
                 </ul>
             </div>
         </div>
@@ -457,7 +490,7 @@
 
     <!-- <script src="script.js"></script> -->
 
-    
+
     <script src="script.js"></script>
     <script>
         var gradient = new Gradient()
