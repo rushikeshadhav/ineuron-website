@@ -1,3 +1,7 @@
+function videoEnd(){
+    document.getElementById("bg-video").style.display = "none";
+}
+
 function animateValue(obj, start, end, duration) {
   let startTimestamp = null;
   const step = (timestamp) => {

@@ -91,7 +91,7 @@ canvas {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
     color: #13153a;
-    mix-blend-mode: color-burn;
+    /* mix-blend-mode: color-burn; */
 }
 
 #value-400::after {
