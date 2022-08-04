@@ -94,6 +94,10 @@ canvas {
     /* mix-blend-mode: color-burn; */
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
 #value-400::after {
     content: "+"
 }

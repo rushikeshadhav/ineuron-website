@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <video id="bg-video" autoplay muted class="hidden lg:block md:absolute md:-z-10 md:-top-1 md:opacity-90" src="./assets/Put your IMPACT, write more code _ @iNeuron Intelligence.mp4"  onended="videoEnd()"></video>
+    <video id="bg-video" autoplay muted class="hidden lg:block md:absolute md:-z-10 md:-top-1 md:opacity-90"
+        src="./assets/Put your IMPACT, write more code _ @iNeuron Intelligence.mp4" onended="videoEnd()"></video>
 
     <canvas class="absolute -top-1 -z-20 h-[1000px] lg:h-full" id="gradient-canvas" style="width:100vw;"></canvas>
 
@@ -33,7 +34,80 @@
         </div>
         <div>
             <ul class="flex justify-between text-white items-center mt-4 font-medium text-lg cursor-pointer">
-                <li class="link-underline link-underline-black">Courses
+                <li class="link-underline link-underline-black">
+                    <div class="dropdown inline-block relative">
+                        <button class="text-white font-semibold text-xl py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1">Courses</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-30 w-48">
+                            <li class=""><a
+                                    class="rounded-t bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Data Science</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Big Data</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Data Analytics</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Web Development</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Mobile Development</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Programming</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Cyber Security</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Testing</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Digital Marketing</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Cloud</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Devops</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">IOT</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">RPA</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">AR VR</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Salesforce</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Deta Structure</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">System Design</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Database</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Aptitude</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">Resume</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-1 px-4 block whitespace-no-wrap"
+                                    href="#">K 12</a></li>
+                        </ul>
+                    </div>
                 </li>
                 <li class="link-underline link-underline-black">One Neuron</li>
                 <li class="link-underline link-underline-black">Job Portal</li>
@@ -41,7 +115,42 @@
                 <li class="link-underline link-underline-black">Become an affiliate</li>
                 <li class="link-underline link-underline-black">Hall of fame</li>
                 <li class="link-underline link-underline-black">Blog</li>
-                <li class="link-underline link-underline-black">Company</li>
+                <li class="link-underline link-underline-black">
+                    <div class="dropdown inline-block relative">
+                        <button class="text-white font-semibold text-xl py-2 px-4 rounded inline-flex items-center">
+                            <span class="mr-1">Company</span>
+                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-30 w-48">
+                            <li class=""><a
+                                    class="rounded-t bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Contect Us</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">FAQ</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Job Assistance</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Terms & Conditions</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">About US </a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Hackathon</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Job Guarantee</a></li>
+                            <li class=""><a
+                                    class="bg-white text-sm hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap"
+                                    href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>
@@ -411,7 +520,7 @@
 
     <div class="flex items-center justify-center min-h-screen bg-white py-48">
         <div class="flex flex-col">
-    
+
             <div class="flex flex-col mt-8">
                 <!-- Meet the Team -->
                 <div class="container max-w-7xl px-4">
@@ -422,17 +531,18 @@
                             <h1 class="text-gray-900 text-4xl font-bold mb-8">
                                 Meet the Team
                             </h1>
-    
+
                             <!-- Description -->
                             <p class="text-gray-700 text-lg font-light">
-                                We are a team of highly motivated individuals with good programming skills and real world experience
+                                We are a team of highly motivated individuals with good programming skills and real
+                                world experience
                             </p>
                         </div>
                     </div>
-    
+
                     <div class="flex flex-wrap">
 
-                        
+
                         <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                             <div class="flex flex-col">
 
@@ -440,24 +550,24 @@
                                     <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                         src="./assets/sudhanshu-square.png">
                                 </a>
-    
+
                                 <div class="text-center mt-6">
-                                    
+
                                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                                         Sudhanshu Kumar
                                     </h1>
-    
+
                                     <div class="text-gray-700 font-light mb-2">
                                         AI Enginner & CEO
                                     </div>
-    
+
                                     <div class="flex gap-2 items-center justify-center opacity-100 hover:opacity-80
                                     transition-opacity duration-300">
-                                    
+
                                         <a href="#" class="flex rounded-full h-10 w-10">
                                             <img src="./assets/icons8-linkedin.svg" alt="">
                                         </a>
-    
+
                                         <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
                                             <img src="./assets/you-tube-icon.svg" alt="">
                                         </a>
@@ -465,7 +575,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                             <div class="flex flex-col">
                                 <!-- Avatar -->
@@ -473,25 +583,25 @@
                                     <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                         src="./assets/hitesh-square.png">
                                 </a>
-    
+
                                 <!-- Details -->
                                 <div class="text-center mt-6">
                                     <!-- Name -->
                                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                                         Hitesh Choudhary
                                     </h1>
-    
+
                                     <div class="text-gray-700 font-light mb-2">
                                         CTO
                                     </div>
-    
+
                                     <div class="flex gap-2 items-center justify-center opacity-100 hover:opacity-80
                                     transition-opacity duration-300">
                                         <!-- Linkedin -->
                                         <a href="#" class="flex rounded-full h-10 w-10">
                                             <img src="./assets/icons8-linkedin.svg" alt="">
                                         </a>
-    
+
                                         <!-- Twitter -->
                                         <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
                                             <img src="./assets/you-tube-icon.svg" alt="">
@@ -500,7 +610,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Member #2 -->
                         <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                             <div class="flex flex-col">
@@ -509,24 +619,24 @@
                                     <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                         src="./assets/krish-square.png">
                                 </a>
-    
+
                                 <div class="text-center mt-6">
 
                                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                                         Krish Naik
                                     </h1>
-    
+
                                     <div class="text-gray-700 font-light mb-2">
                                         CIO
                                     </div>
-    
+
                                     <div class="flex gap-2 items-center justify-center opacity-100 hover:opacity-80
                                     transition-opacity duration-300">
-                                    
+
                                         <a href="#" class="flex rounded-full h-10 w-10">
                                             <img src="./assets/icons8-linkedin.svg" alt="">
                                         </a>
-    
+
                                         <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
                                             <img src="./assets/you-tube-icon.svg" alt="">
                                         </a>
@@ -534,7 +644,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Member #3 -->
                         <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                             <div class="flex flex-col">
@@ -543,24 +653,24 @@
                                     <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                         src="./assets/telusko-square.png">
                                 </a>
-    
+
                                 <div class="text-center mt-6">
-                                    
+
                                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                                         Navin Reddy
                                     </h1>
-    
+
                                     <div class="text-gray-700 font-light mb-2">
                                         Senior VP
                                     </div>
-    
+
                                     <div class="flex gap-2 items-center justify-center opacity-100 hover:opacity-80
                                     transition-opacity duration-300">
-                                    
+
                                         <a href="#" class="flex rounded-full h-10 w-10">
                                             <img src="./assets/icons8-linkedin.svg" alt="">
                                         </a>
-    
+
                                         <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
                                             <img src="./assets/you-tube-icon.svg" alt="">
                                         </a>
@@ -568,7 +678,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <!-- Member #4 -->
                         <div class="w-full md:w-6/12 lg:w-3/12 mb-6 px-6 sm:px-6 lg:px-4">
                             <div class="flex flex-col">
@@ -577,24 +687,24 @@
                                     <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                         src="./assets/amresh-square.png">
                                 </a>
-    
+
                                 <div class="text-center mt-6">
-                                    
+
                                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                                         Amresh Bharti
                                     </h1>
-    
+
                                     <div class="text-gray-700 font-light mb-2">
                                         VP Marketing
                                     </div>
-    
+
                                     <div class="flex gap-2 items-center justify-center opacity-100 hover:opacity-80
                                     transition-opacity duration-300">
-                                    
+
                                         <a href="#" class="flex rounded-full h-10 w-10">
                                             <img src="./assets/icons8-linkedin.svg" alt="">
                                         </a>
-    
+
                                         <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
                                             <img src="./assets/you-tube-icon.svg" alt="">
                                         </a>
@@ -609,24 +719,24 @@
                                     <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                         src="./assets/saksham-square.png">
                                 </a>
-    
+
                                 <div class="text-center mt-6">
-                                    
+
                                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                                         Saksham Choudhary
                                     </h1>
-    
+
                                     <div class="text-gray-700 font-light mb-2">
                                         Cyber Security Lead
                                     </div>
-    
+
                                     <div class="flex gap-2 items-center justify-center opacity-100 hover:opacity-80
                                     transition-opacity duration-300">
-                                    
+
                                         <a href="#" class="flex rounded-full h-10 w-10">
                                             <img src="./assets/icons8-linkedin.svg" alt="">
                                         </a>
-    
+
                                         <a href="#" class="flex rounded-full hover:bg-blue-50 h-10 w-10">
                                             <img src="./assets/you-tube-icon.svg" alt="">
                                         </a>
@@ -641,20 +751,20 @@
                                     <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                         src="./assets/Souranghsu-Pal.png">
                                 </a>
-    
+
                                 <div class="text-center mt-6">
-                                    
+
                                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                                         Souranghsu Pal
                                     </h1>
-    
+
                                     <div class="text-gray-700 font-light mb-2">
                                         Mentor
                                     </div>
-    
+
                                     <div class="flex gap-2 items-center justify-center opacity-100 hover:opacity-80
                                     transition-opacity duration-300">
-                                    
+
                                         <a href="#" class="flex rounded-full h-10 w-10">
                                             <img src="./assets/icons8-linkedin.svg" alt="">
                                         </a>
@@ -669,20 +779,20 @@
                                     <img class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
                                         src="./assets/Kiran-Sahu-square.png">
                                 </a>
-    
+
                                 <div class="text-center mt-6">
-                                    
+
                                     <h1 class="text-gray-900 text-xl font-bold mb-1">
                                         Kian Sahu
                                     </h1>
-    
+
                                     <div class="text-gray-700 font-light mb-2">
                                         Mentor
                                     </div>
-    
+
                                     <div class="flex gap-2 items-center justify-center opacity-100 hover:opacity-80
                                     transition-opacity duration-300">
-                                    
+
                                         <a href="#" class="flex rounded-full h-10 w-10">
                                             <img src="./assets/icons8-linkedin.svg" alt="">
                                         </a>
@@ -729,7 +839,108 @@
 
 
 
-
+    <div class="flex justify-center">
+        <div>
+            <div class="dropdown relative">
+                <button class="
+                dropdown-toggle
+                px-6
+                py-2.5
+                bg-blue-600
+                text-white
+                font-medium
+                text-xs
+                leading-tight
+                uppercase
+                rounded
+                shadow-md
+                hover:bg-blue-700 hover:shadow-lg
+                focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+                active:bg-blue-800 active:shadow-lg active:text-white
+                transition
+                duration-150
+                ease-in-out
+                flex
+                items-center
+                whitespace-nowrap
+              " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="w-2 ml-2"
+                        role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path fill="currentColor"
+                            d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z">
+                        </path>
+                    </svg>
+                </button>
+                <ul class="
+                dropdown-menu
+                min-w-max
+                absolute
+                hidden
+                bg-white
+                text-base
+                z-50
+                float-left
+                py-2
+                list-none
+                text-left
+                rounded-lg
+                shadow-lg
+                mt-1
+                hidden
+                m-0
+                bg-clip-padding
+                border-none
+              " aria-labelledby="dropdownMenuButton1">
+                    <li>
+                        <a class="
+                    dropdown-item
+                    text-sm
+                    py-2
+                    px-4
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  " href="#">Action</a>
+                    </li>
+                    <li>
+                        <a class="
+                    dropdown-item
+                    text-sm
+                    py-2
+                    px-4
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  " href="#">Another action</a>
+                    </li>
+                    <li>
+                        <a class="
+                    dropdown-item
+                    text-sm
+                    py-2
+                    px-4
+                    font-normal
+                    block
+                    w-full
+                    whitespace-nowrap
+                    bg-transparent
+                    text-gray-700
+                    hover:bg-gray-100
+                  " href="#">Something else here</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
 
