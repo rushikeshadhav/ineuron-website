@@ -14,11 +14,11 @@ function animateValue(obj, start, end, duration) {
 const obj = document.getElementById("value-400");
 const obj2 = document.getElementById("value-400000");
 const obj3 = document.getElementById("value-10000");
-const obj4 = document.getElementById("value-200");
+const obj4 = document.getElementById("value-20");
 animateValue(obj, 0, 400, 2000);
 animateValue(obj2, 0, 400000, 2000);
 animateValue(obj3, 0, 10000, 2000);
-animateValue(obj4, 0, 200, 2000);
+animateValue(obj4, 0, 20, 2000);
 
 
 
