@@ -585,9 +585,3 @@ class Gradient {
 * Gradient.toggleColor(index)
 * Gradient.updateFrequency(freq)
 */
-
-
-
-
-
-
